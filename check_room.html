@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Room</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="check-room">
+    <div class="header">
+      <h2 class="headings">AVAILABLE ROOM</h2>
+    </div>
+    
+    <div id="alert-container" class="container mt-3"></div>
+
+    <!-- Card 1 -->
+  <div class="check-available">
+    <div class="check-card">
+      <img src="gambar/eifelview.jpeg" alt="double-suite">
+    </div>
+    <div class="room-info">
+      <h2>Double Suite Room</h2>
+      <p><strong>Eiffel Tower View</strong></p>
+      <p>2 Guests</p>
+      <p>1 King Bed</p>
+      <p>Free Wi-Fi</p>
+      <p>Free Breakfast (2pax)</p>
+    </div>
+    <div class="price">
+      $200 /night
+      <p><button class="button" onclick="showAlert('Double Suite Room')">Booking Now</button></p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="check-available">
+    <div class="check-card">
+      <img src="gambar/singlebed.jpeg" alt="single-room">
+    </div>
+    <div class="room-info">
+      <h2>Standard Room</h2>
+      <p><strong>City View</strong></p>
+      <p>2 Guests</p>
+      <p>2 Single Beds</p>
+      <p>Free Wi-Fi</p>
+      <p>No Breakfast</p>
+    </div>
+    <div class="price">
+      $100 /night
+      <p><button class="button" onclick="showAlert('Standard Room')">Booking Now</button></p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="check-available">
+    <div class="check-card">
+      <img src="gambar/suiteroom.jpeg" alt="presidential-suite">
+    </div>
+    <div class="room-info">
+      <h2>Presidential Suite</h2>
+      <p><strong>Panoramic View</strong></p>
+      <p>4 Guests</p>
+      <p>2 King Beds</p>
+      <p>Free Wi-Fi</p>
+      <p>Free Breakfast (4pax)</p>
+    </div>
+    <div class="price">
+      $500 /night
+      <p><button class="button" onclick="showAlert('Presidential Suite')">Booking Now</button></p>
+    </div>
+  </div>
+
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showAlert(roomName) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+      const alertContainer = document.getElementById('alert-container');
+      const alertMessage = document.createElement('div');
+      alertMessage.classList.add('alert', 'alert-success');
+      alertMessage.role = 'alert';
+      alertMessage.innerText = `You have successfully booked the ${roomName}.`;
+      alertContainer.appendChild(alertMessage);
+  
+      setTimeout(() => {
+        alertMessage.classList.add('fade');
+        alertMessage.classList.add('d-none');
+      }, 3000);
+    }
+  </script>
+  
+</body>
+</html>
+
+
+

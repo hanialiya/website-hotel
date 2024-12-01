@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Seasons Hotel & Resorts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+<body>
+    <section id="home">
+    <header class="header">
+       <div class="container">
+        <nav>
+            <div class="logo"> 
+                <img src="gambar/logopng.png" alt="logo">
+            </div>
+            <ul>
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#facility">Facility</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="login.html">
+                    <input type="submit" value="Log-in" class="btn-submit">
+                </a> 
+            </ul>
+            <div class="btn">
+                    <i class="fas fa-bars menu-btn"></i>
+                </div>
+        </nav>
+       </div>
+    </header>
+
+    <!-- showcase -->
+    <main>
+        <div class="slide-container swiper">
+            <div class="slide-content swiper-wrapper">
+                <div class="overlay swiper-slide">
+                    <img src="gambar/depan.jpg" alt="depan">
+                    <div class="img-overlay">
+                        <h2 class="headings">Experience <span>Four Seasons</span></h2>
+                            <p class="heading-normal-txt">Booking The Room Now</p>
+                    </div>
+                </div>
+                <div class="overlay swiper-slide">
+                    <img src="gambar/outdoor.jpg" alt="depan">
+                    <div class="img-overlay">
+                        <h2 class="headings"><span>Getaway</span> With Us</h2>
+                            <p class="heading-normal-txt">Booking The Room Now</p>
+                    </div>
+                </div>
+                <div class="overlay swiper-slide">
+                    <img src="gambar/parkir.jpeg" alt="depan">
+                    <div class="img-overlay">
+                        <h2 class="headings"><span>Celebrate the New Year in luxury</h2>
+                            <p lass="heading-normal-txt">Booking The Room Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+    <!-- about us -->
+    <section id="about-us">
+        <div class="container">
+            <div class="about-content-wrapper">
+                <div class="agency-left-side">
+                    <h2 class="headings">
+                        DEFINE THE <span>LUXURY</span> WITH US
+                    </h2>
+                    <p class="lead">
+                        When you think about Four Seasons, we hope unparalleled luxury comes to mind. But what is luxury, really? Our answer may surprise you.
+                    </p>
+                    <p class="lead">
+                        To us, true luxury is a meaningful sense of belonging. It is a dedicated focus on how people want to be treated, grounded in the genuine care you experience during your stay and defined by an abundance of humanity and generosity. This starts with our passionate team, welcoming you to be the centre of our world, anywhere in the world - and always with a distinctly human touch.
+                    </p>
+                </div>
+                <div class="agency-right-side">
+                    <img src="gambar/resepsionis.jpg" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- facility -->
+    <section id="facility">
+        <div class="container">
+            <h2 class="headings">OUR FACILITY</h2>
+            <div class="card_container">
+                <article class="card_article">
+                    <img src="gambar/pool.jpg" alt="pool" class="card_img">
+                    <div class="card_data">
+                        <h2 class="card_title">Swimming Pool</h2>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="gambar/spa.jpg" alt="spa" class="card_img">
+                    <div class="card_data">
+                        <h2 class="card_title">Spa</h2>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="gambar/restaurant2.jpg" alt="restaurant" class="card_img">
+                    <div class="card_data">
+                        <h2 class="card_title">Restaurant</h2>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reservation -->
+    <section id="reservation">
+    <div class="container">
+        <h2 class="headings"> MAKE A RESERVATION</h2>
+    </div>
+    <form action="check_room.html" class="reservation-form">
+
+        <div class="form-group">
+            <label for="check-in">Check-in Date *</label>
+            <input type="date" id="check-in" class="input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="check-out">Check-out Date *</label>
+            <input type="date" id="check-out" class="input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="adults">Adults *</label>
+            <select name="adults" id="adults" class="input" required>
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+                <option value="6">6 Adults</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="children">Children *</label>
+            <select name="children" id="children" class="input" required>
+                <option value="0">No Children</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+                <option value="5">5 Children</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="rooms">Rooms *</label>
+            <select name="rooms" id="rooms" class="input" required>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+                <option value="5">5 Rooms</option>
+            </select>
+        </div>
+
+       <a href="check_room.html">
+        <br><input type="submit" value="Check Room" class="btn-submit">
+    </a>
+    </form>
+    <p><center>note: isi form diatas untuk menuju halaman selanjutnya</center></p>
+    </section>
+
+    <!-- contact -->
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <h2 class="headings">CONTACT US</h2>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> 123 456 789</p>
+                    <p><strong>Email:</strong> empatmusim@fourseasons.com</p>
+                    <p><strong>Address:</strong> 31 Av. George V, 75008 Paris, France</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p>Create By Hani Aliya 2024</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>
